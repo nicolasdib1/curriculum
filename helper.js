@@ -87,8 +87,8 @@ function logClicks(x,y) {
 
 $(document).click(function(loc) {
   var x =loc.pageX;
-  var y = loc.pageY
-  logClicks(x,y)
+  var y = loc.pageY;
+  logClicks(x,y);
 });
 
 
@@ -179,7 +179,7 @@ function initializeMap() {
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
-      infoWindow.open(map,maker)
+      infoWindow.open(map,maker);
 
       // your code goes here!
     });
