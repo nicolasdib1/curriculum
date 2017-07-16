@@ -182,7 +182,7 @@ projects= {
 };
 
 projects.display= function() {
-	for (var roject in projects.projects){
+	for (var project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
 		var formattedTitle=HTMLprojectTitle.replace("%data%",projects.projects[project].Tittle);
 		$(".project-entry:last").append(formattedTitle);
