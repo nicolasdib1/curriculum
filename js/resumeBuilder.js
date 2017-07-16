@@ -61,7 +61,7 @@ var education ={
 		},
 		{
 			"name" : "Universidad de Los Andes",
-			"location" : "Bogota",
+			"location" : "Santiago",
 			"degree" : "Master",
 			"majors" : ["Economics"],
 			"dates" : "2012",
@@ -112,11 +112,11 @@ var work ={
 		"description":"Establish the prices of air tickets in LATAM airlines"
 		},
 		{
-		"title":"Revenue Manager",
-		"employer":"LATAM",
-		"dates":"March 2016 - Now",
+		"title":"Fixed income Trader",
+		"employer":"FDS",
+		"dates":"Febrary 2016",
 		"location":"Santiago",
-		"description":"Establish the prices of air tickets in LATAM airlines"
+		"description":"Trade fixed income securites for the FDS-Bank"
 		}
 	],
 	
@@ -176,24 +176,29 @@ $("#main").append(internationalizeButton);
 projects= {
 
 	projects:[{
-		"Tittle":"Sample Prject1",
+		"title":"Fenix Project",
 		"dates":"2017",
-		"description":"Abc1 abcsd abcasd asdsdsdsasd sasdsaldasd asdlasd asdlasd asdlasd asdlas",
-		"images" : "www.google.com"
+		"description":"Create a new algorithm to establish the optimal prices in order to maximize the airline revenue",
+		"images" : "images/surf.jpg"
 	}]
 };
 
 projects.display= function() {
-	for (var project in projects.projects){
-		$("#projects").append(HTMLprojectStart);
-		var formattedTitle=HTMLprojectTitle.replace("%data%",projects.projects[project].Tittle);
+
+	$("#projects").append(HTMLprojectStart);
+	for(var project in projects.projects){
+		
+		var formattedTitle=HTMLprojectTitle.replace("%data%",projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
 
-		var formatedDates=HTMLprojectTitle.replace("%data%",projects.projects[project].Date);
+		var formatedDates=HTMLprojectTitle.replace("%data%",projects.projects[project].dates);
 		$(".project-entry:last").append(formatedDates);
 
-		var formatedText=HTMLprojectTitle.replace("%data%",projects.projects[project].Text);
+		var formatedText=HTMLprojectTitle.replace("%data%",projects.projects[project].description);
 		$(".project-entry:last").append(formatedText);
+
+		var formatedImage=HTMLprojectImage.replace("%data%",projects.projects[project].images);
+		$(".project-entry:last").append(formatedImage);
 	}
 };
 
