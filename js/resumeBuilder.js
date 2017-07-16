@@ -19,6 +19,7 @@ $("#header").prepend(formatttedName);
 */
 
 
+
 var bio = {
 	"name" : "Nicolas",
 	"role" : "Entrepeneur",
@@ -107,14 +108,14 @@ var work ={
 		"title":"Revenue Manager",
 		"employer":"LATAM",
 		"dates":"March 2016 - Now",
-		"location":"New york",
+		"location":"Santiago",
 		"description":"Establish the prices of air tickets in LATAM airlines"
 		},
 		{
 		"title":"Revenue Manager",
 		"employer":"LATAM",
 		"dates":"March 2016 - Now",
-		"location":"New york",
+		"location":"Santiago",
 		"description":"Establish the prices of air tickets in LATAM airlines"
 		}
 	],
@@ -176,8 +177,9 @@ projects= {
 
 	projects:[{
 		"Tittle":"Sample Prject1",
-		"Date":"2017",
-		"Text":"Abc1 abcsd abcasd asdsdsdsasd sasdsaldasd asdlasd asdlasd asdlasd asdlas"
+		"dates":"2017",
+		"description":"Abc1 abcsd abcasd asdsdsdsasd sasdsaldasd asdlasd asdlasd asdlasd asdlas",
+		"images" : "www.google.com"
 	}]
 };
 
@@ -197,4 +199,4 @@ projects.display= function() {
 
 projects.display();
 
-$("#MapDiv").append(googleMap);
+$("#mapDiv").append(googleMap);
