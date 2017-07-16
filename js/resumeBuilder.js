@@ -32,7 +32,7 @@ var bio = {
 	},
 	"welcomeMessage":"Welcome to my resume",
 	"skills":["Imagination", "Analitycs"],
-	"bioPic":"https://www.google.cl/search?q=nicolas+dib&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiB7NLC7PnUAhVEjpAKHU_4CQAQ_AUICigB&biw=1366&bih=662#.jpg",
+	"biopic":"images/foto1.jpg",
 	display:function(){
 
 		$("#header").prepend(HTMLheaderRole.replace("%data%",bio.role));
@@ -43,7 +43,7 @@ var bio = {
 		$("#header").append(HTMLemail.replace("%data%",bio.contacts.email));
 		$("#header").append(HTMLtwitter.replace("%data%",bio.contacts.twitter));
 		$("#header").append(HTMLgithub.replace("%data%",bio.contacts.github));
-		
+		$("#header").append(HTMLbioPic.replace("%data%",bio.biopic));
 		
 	}
 };
